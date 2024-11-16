@@ -1,0 +1,182 @@
+[
+    {
+        "name": "school",
+        "type": "str",
+        "allowed_values": ["GP", "MS"],
+        "description": "The school of the student. 'GP' for Gabriel Pereira and 'MS' for Mousinho da Silveira."
+    },
+    {
+        "name": "sex",
+        "type": "str",
+        "allowed_values": ["F", "M"],
+        "description": "The gender of the student. 'F' for female and 'M' for male."
+    },
+    {
+        "name": "age",
+        "type": "int",
+        "range": [14, 22],
+        "description": "The age of the student, ranging from 14 to 22 years old."
+    },
+    {
+        "name": "address",
+        "type": "str",
+        "allowed_values": ["U", "R"],
+        "description": "The type of location: 'U' for urban and 'R' for rural."
+    },
+    {
+        "name": "famsize",
+        "type": "str",
+        "allowed_values": ["GT3", "LE3"],
+        "description": "The size of the family: 'GT3' for greater than 3 members and 'LE3' for less than or equal to 3 members."
+    },
+    {
+        "name": "Pstatus",
+        "type": "str",
+        "allowed_values": ["A", "T"],
+        "description": "The parent's cohabitation status: 'A' for apart and 'T' for together."
+    },
+    {
+        "name": "Medu",
+        "type": "int",
+        "allowed_values": [0, 1, 2, 3, 4],
+        "description": "Mother's education level: 0 (none), 1 (primary education), 2 (5th-9th grade), 3 (secondary education), 4 (higher education)."
+    },
+    {
+        "name": "Fedu",
+        "type": "int",
+        "allowed_values": [0, 1, 2, 3, 4],
+        "description": "Father's education level: 0 (none), 1 (primary education), 2 (5th-9th grade), 3 (secondary education), 4 (higher education)."
+    },
+    {
+        "name": "Mjob",
+        "type": "str",
+        "allowed_values": ["at_home", "health", "other", "services", "teacher"],
+        "description": "Mother's job: 'at_home', 'health', 'other', 'services', 'teacher'."
+    },
+    {
+        "name": "Fjob",
+        "type": "str",
+        "allowed_values": ["at_home", "health", "other", "services", "teacher"],
+        "description": "Father's job: 'at_home', 'health', 'other', 'services', 'teacher'."
+    },
+    {
+        "name": "reason",
+        "type": "str",
+        "allowed_values": ["course", "other", "home", "reputation"],
+        "description": "Reason for choosing the school: 'course', 'other', 'home', 'reputation'."
+    },
+    {
+        "name": "guardian",
+        "type": "str",
+        "allowed_values": ["mother", "father", "other"],
+        "description": "Guardian of the student: 'mother', 'father', 'other'."
+    },
+    {
+        "name": "traveltime",
+        "type": "int",
+        "range": [1, 5],
+        "description": "Time taken to travel to school: 1 (less than 15 minutes), 2 (15-30 minutes), 3 (30 minutes to 1 hour), 4 (more than 1 hour)."
+    },
+    {
+        "name": "studytime",
+        "type": "int",
+        "range": [1, 5],
+        "description": "Weekly study time: 1 (<2 hours), 2 (2-5 hours), 3 (5-10 hours), 4 (>10 hours)."
+    },
+    {
+        "name": "failures",
+        "type": "int",
+        "allowed_values": [0, 1, 2, 3],
+        "description": "Number of past class failures: 0 (none), 1 (one failure), 2 (two failures), 3 (three or more failures)."
+    },
+    {
+        "name": "schoolsup",
+        "type": "str",
+        "allowed_values": ["yes", "no"],
+        "description": "Extra educational support: 'yes' or 'no'."
+    },
+    {
+        "name": "famsup",
+        "type": "str",
+        "allowed_values": ["yes", "no"],
+        "description": "Family educational support: 'yes' or 'no'."
+    },
+    {
+        "name": "paid",
+        "type": "str",
+        "allowed_values": ["yes", "no"],
+        "description": "Extra paid classes within the course subject: 'yes' or 'no'."
+    },
+    {
+        "name": "activities",
+        "type": "str",
+        "allowed_values": ["yes", "no"],
+        "description": "Participation in extra-curricular activities: 'yes' or 'no'."
+    },
+    {
+        "name": "nursery",
+        "type": "str",
+        "allowed_values": ["yes", "no"],
+        "description": "Attended nursery school: 'yes' or 'no'."
+    },
+    {
+        "name": "higher",
+        "type": "str",
+        "allowed_values": ["yes", "no"],
+        "description": "Wants to pursue higher education: 'yes' or 'no'."
+    },
+    {
+        "name": "internet",
+        "type": "str",
+        "allowed_values": ["yes", "no"],
+        "description": "Internet access at home: 'yes' or 'no'."
+    },
+    {
+        "name": "romantic",
+        "type": "str",
+        "allowed_values": ["yes", "no"],
+        "description": "In a romantic relationship: 'yes' or 'no'."
+    },
+    {
+        "name": "famrel",
+        "type": "int",
+        "allowed_values": [1, 2, 3, 4, 5],
+        "description": "Quality of family relationships (1 = very bad, 5 = excellent)."
+    },
+    {
+        "name": "freetime",
+        "type": "int",
+        "allowed_values": [1, 2, 3, 4, 5],
+        "description": "Free time after school (1 = very low, 5 = very high)."
+    },
+    {
+        "name": "goout",
+        "type": "int",
+        "allowed_values": [1, 2, 3, 4, 5],
+        "description": "Frequency of going out with friends (1 = very low, 5 = very high)."
+    },
+    {
+        "name": "Dalc",
+        "type": "int",
+        "allowed_values": [1, 2, 3, 4, 5],
+        "description": "Workday alcohol consumption (1 = very low, 5 = very high)."
+    },
+    {
+        "name": "Walc",
+        "type": "int",
+        "allowed_values": [1, 2, 3, 4, 5],
+        "description": "Weekend alcohol consumption (1 = very low, 5 = very high)."
+    },
+    {
+        "name": "health",
+        "type": "int",
+        "allowed_values": [1, 2, 3, 4, 5],
+        "description": "Current health status (1 = very bad, 5 = very good)."
+    },
+    {
+        "name": "absences",
+        "type": "int",
+        "range": [0, 100],
+        "description": "Number of school absences (0 to 100)."
+    }
+]
